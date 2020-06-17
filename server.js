@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({"extended" : false}));
     res.json({"error" : false,"message" : "Hello World"});
 });*/
 
-router.route("/fortheplanet")
+router.route("/")
     .get(function(req,res){
         res.json({"error" : false,"message" : "Failed For the planet Log"});
     })
