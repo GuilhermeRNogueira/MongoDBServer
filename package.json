@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "mongo server log",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuilhermeRNogueira/MongoDBServer.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "nodeJS"
+  ],
+  "author": "Guilherme Nogueira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GuilhermeRNogueira/MongoDBServer/issues"
+  },
+  "homepage": "https://github.com/GuilhermeRNogueira/MongoDBServer#readme"
+}
