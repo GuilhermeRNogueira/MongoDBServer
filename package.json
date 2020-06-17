@@ -21,6 +21,11 @@
   },
   "homepage": "https://github.com/GuilhermeRNogueira/MongoDBServer#readme",
   "dependencies": {
-    "express":"*"
- }
+    "create-jslib": "^2.4.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.8",
+    "mongoose": "^5.9.18",
+    "mongoose-morgan": "^1.0.15",
+    "uniq": "^1.0.1"
+  }
 }
