@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({"extended" : false}));
     res.json({"error" : false,"message" : "Hello World"});
 });*/
 
-router.route("/")
+router.route('*')
     .get(function(req,res){
         res.json({"error" : false,"message" : "Failed For the planet Log"});
     })
@@ -55,7 +55,7 @@ router.route("/")
         });
     });
 
-app.use('/',router);
+app.use('*',router);
 
 app.listen(port);
 console.log("Listening to PORT "+ port );
