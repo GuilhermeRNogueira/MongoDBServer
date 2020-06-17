@@ -21,8 +21,6 @@
   },
   "homepage": "https://github.com/GuilhermeRNogueira/MongoDBServer#readme",
   "dependencies": {
-    "express":"*",
-    "body-parser":"*",
-    "bcrypt": "^0.8.5"
+    "express":"*"
  }
 }
