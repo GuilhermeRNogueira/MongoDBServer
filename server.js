@@ -1,8 +1,10 @@
-var express = require('express');
+var express     =   require('express');
 var app         =   express();
 var bodyParser  =   require('body-parser');
 var router      =   express.Router();
 var mongoose    =   require("mongoose");
+const port = process.env.PORT || 3000
+
 mongoose.connect('mongodb+srv://admin:admin@fortheplanet-ya50d.mongodb.net/fortheplanetlog?retryWrites=true&w=majority');
 
 var Schema = mongoose.Schema;
@@ -55,5 +57,5 @@ router.route("/fortheplanet")
 
 app.use('/',router);
 
-app.listen(3000);
-console.log("Listening to PORT 3000");
+app.listen(port);
+console.log("Listening to PORT "+ port );
