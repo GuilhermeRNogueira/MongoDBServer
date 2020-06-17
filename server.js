@@ -45,14 +45,15 @@ router.route("/fortheplanet")
         });
         console.log("For the planet Log generation body: "+ req.body.generation);
         console.log("For the planet Log playerName body: "+ req.body.playerName);
-        data.save(function(err){
+        data.save()/*function(err){
             if(err) {
                 response = {"error" : true,"message" : "Error adding data"};
             } else {
                 response = {"error" : false,"message" : "Data added"};
             }
             res.json(response);
-        });
+        });*/
+        res.json({"error" : false,"message" : "Data added"});
     });
 
 app.use('/',router);
