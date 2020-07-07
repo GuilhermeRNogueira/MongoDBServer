@@ -16,6 +16,7 @@ var logSchema = new mongoose.Schema({
     playerType : String,
     playerTookFromCP : String,
     playerGain : String,
+    nCollaboration: String,
     envState : String,
 });
 var LogItem = mongoose.model('ForThePlanetLog',logSchema);
@@ -41,6 +42,7 @@ router.route("/fortheplanet")
             playerType: req.body.playerType,
             playerTookFromCP: req.body.playerTookFromCP,
             playerGain: req.body.playerGain,
+            nCollaboration: req.body.nCollaboration,
             envState: req.body.envState,
         });
         console.log("For the planet Log generation body: "+ req.body.generation);
